@@ -3,7 +3,7 @@
 
 <body> 
 
-<table border= '1'>
+<table style= "width:90%; margin:auto" cellpadding="10" cellspacing="2"border= '1'>
 <tr>
 
 <td> </td>	
@@ -87,6 +87,8 @@ The information is more than 3 years old, but is not necessarily out of date.</t
 </tr>	
 </table>
 <style type="text/css">
+body{text-align: center;
+}
 #I {
 	cursor: pointer;
 }
@@ -171,7 +173,7 @@ var d = 4;
 var e = 4;
 var f = 4;
 var ttl = 0;
-var x = 6
+var x = 21
 var cl = 0;
 function green(){
 	if(a ==3){
@@ -559,7 +561,7 @@ function junk(){
 		return
 }
 	
-function clik(){
+function c(){
 
 	if(a!=4&&b!=4&&c!=4&&d!=4&&e!=4&&f!=4){
 		ttl = a + b + c + d + e + f;
@@ -572,11 +574,44 @@ function clik(){
 	}
 
 }
+
+function clik(){
+	
+	if(a==4||b==4||c==4||d==4||e==4||f==4){
+		if(a!=4){
+			ttl= a + b+ c + d + e + f - x
+		}
+		if(b!=4){
+			ttl+=b
+		}
+		if(c!=4){
+
+		}
+		if(d!=4){
+
+		}
+		if(e!=4){
+
+		}
+		if(f!=4){
+
+		}
+	}
+	if(a!=4&&b!=4&&c!=4&&d!=4&&e!=4&&f!=4){
+		ttl = a + b + c + d + e + f;
+		document.getElementById('idk').innerHTML=ttl	
+		
+ 	} else
+	if(a!=4||b!=4||c!=4||d!=4||e!=4||f!=4){
+	
+		document.getElementById('idk').innerHTML=ttl	
+	}
+}
 //separate variable that increases in value everytime something is clicked
 //keep track of how many of the rows have been clicked
 
 
 </script>
-Mark V
+Mark VI
 </body>
 </html>
