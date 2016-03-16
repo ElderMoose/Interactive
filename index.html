@@ -223,6 +223,7 @@ function green(){
 	if(f!=3){
 	document.getElementById('XXI').style.color='black'
 	}
+	
 }
 
 function gold(){
@@ -577,6 +578,12 @@ function clik(){
  		if(a!=4||b!=4||c!=4||d!=4||e!=4||f!=4){
 		ttl = a + b + c + d + e + f - x;
 		document.getElementById('idk').innerHTML=ttl	
+	}
+	if(ttl<=18&&ttl>=15){
+		document.getElementById("18").style.color="green"
+		document.getElementById("14").style.color="black"
+		document.getElementById("10").style.color="black"
+		document.getElementById("6").style.color="black"
 	}
 
 }
